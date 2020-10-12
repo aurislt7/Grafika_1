@@ -45,10 +45,10 @@ function draw() {
       ctx.transform(0.5, 0, 0, 0.5, 0, 0);
       drawF(step);
       ctx.restore();
-      ctx.transform(0, 0.5, -0.5, 0, 500, 0);
+      ctx.transform(0.5, 0, 0, -0.5, 250, 250);
       drawF(step);
       ctx.restore();
-      ctx.transform(-0.5, 0, 0, -0.5, 500, 500);
+      ctx.transform(0, 0.5, 0.5, 0, 250, 250);
       drawF(step);
       ctx.restore();
       ctx.transform(0, -0.25, 0.25, 0, 125, 375);
@@ -57,8 +57,6 @@ function draw() {
   }
 
   function drawT() {
-    // Filled red triangle
-    //ctx.fillStyle = "rgb(0,0,0)";
     ctx.beginPath();
     ctx.moveTo(0, 0);
     ctx.lineTo(0, 250);
